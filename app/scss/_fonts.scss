@@ -1,0 +1,8 @@
+@import "_mixins/font-face";
+
+@include font-face("RobotoRegular", "../fonts/RobotoRegular/RobotoRegular");
+@include font-face("RobotoBold", "../fonts/RobotoBold/RobotoBold", bold);
+@include font-face("BebasBold", "../fonts/BebasBold/BebasBold", bold);
+@include font-face("LatoRegular", "../fonts/LatoRegular/LatoRegular");
+@include font-face("LatoBlack", "../fonts/LatoBlack/LatoBlack");
+@include font-face("FontAwesome", "../fonts/fontawesome-webfont");

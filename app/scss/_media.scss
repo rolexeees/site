@@ -1,0 +1,326 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+	.main-menu {
+		
+		&__nav {
+			display: none;
+			text-transform: uppercase;
+			min-width: 275px;
+			float: right;
+			text-align: right;
+			background-color: $text;
+			border-bottom: 4px solid $gray;
+			border-top: 4px solid $gray;
+			top: 75px;
+			position: absolute;
+			right: 95px;
+			z-index: 10;
+
+			li {
+				display: block;
+				line-height: 0;
+				padding: 0;
+			}
+			a {
+				display: block;
+				line-height: 48px;
+				padding: 0 20px;
+				font-size: em(20px);
+				transition: all .5s ease;
+				border-radius: 0;
+				border-bottom: 1px solid $gray;
+				&:hover {
+					background-color: #2e3d4d;
+				}
+			}
+		}
+
+	}
+
+	.s-tariff {
+
+		.cards-wrap {
+			margin-top: 115px;
+		}
+
+		.card {
+			
+			h3 {
+				font-size: 25px;
+			}
+			
+			&__top-car {
+				top: -55px;
+			}
+
+			&__content {
+				padding: 120px 20px 25px;
+			}
+		}
+	}
+
+
+	.s-app {
+
+		&__wrap {
+			margin-top: 10px;
+			margin-bottom: 0;	
+		}
+		
+		.app {
+			margin: 0 auto;
+			text-align: center;
+		}
+		
+		.smartphone {
+			display: none;
+		}
+	}
+
+	.s-testimonial {
+
+		.testimonial {
+			&__content {
+				padding: 30px 40px;
+			}
+		}
+	}
+
+	
+}
+
+
+
+// ≥992px
+@include media-breakpoint-down(md) {
+
+
+	.s-book {
+		padding-top: 65px;
+		&__left {
+			text-align: center;	
+		}
+		.headline {
+			text-align: center;
+		}
+	}
+
+
+	.forms {
+		margin-top: 50px;
+	}
+
+	.main-header {
+		max-height: 450px;
+		&__img {
+			display: none;
+		}
+	}
+
+
+.s-tariff {
+
+	.cards-wrap {
+	margin-top: 80px;		
+
+		&__item:nth-child(3) {
+				margin: 80px auto 0;
+		}
+	}
+
+	.card {
+
+			
+		&__top-car {
+			top: -55px;
+		}
+
+		&__content {
+			padding: 130px 20px 30px;
+		}
+	}
+}
+
+	.s-testimonial {
+		
+		&__wrap {
+			margin: 30px 0 0; 
+		}
+
+		.testimonial {
+			margin-top: 25px;
+
+			&__content {
+				padding: 30px 40px;
+			}
+		}
+	}
+
+	.main-footer {
+		.f-cont {
+			margin-top: 30px;
+		}
+
+		&__copy {
+			margin-top: 50px;
+		}
+	}
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+	.toggle-mnu {
+		top: 34px;
+		right: 40px;
+	}
+	
+	.main-menu {
+		padding: 25px 40px;
+
+		&__nav {
+			right: 40px;
+		}
+
+		&__brand {
+			img {
+				width: 120px;
+			}
+		}
+	}
+
+	h1 {
+		font-size: 35px;
+	}
+
+	h2 {
+		font-size: 30px;
+	}
+
+	h3 {
+		font-size: 25px;
+	}
+
+	.headline {
+		
+		&__phone {
+			font-size: 45px;
+		}
+
+		&__web {
+			font-size: 15px;
+		}
+	}
+
+	.s-tariff {
+
+	.cards-wrap {
+		margin-top: 30px;
+		&__item {
+		&:nth-child(1), &:nth-child(2) {
+				margin: 80px auto 0;
+		}
+		}
+	}
+	}
+
+	.s-feature {
+		&__wrap {
+			margin-top: 50px;
+		}
+
+		.feature {
+			margin-bottom: 30px;
+		}
+	}
+
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+	.toggle-mnu {
+		right: 20px;
+	}
+	
+	.main-menu {
+		padding-left: 20px;
+		&__nav {
+			right: 20px;
+			display: none;
+		}
+	}
+
+	.headline {
+		
+		&__phone {
+			font-size: 35px;
+		}
+
+		&__web {
+			font-size: 10px;
+		}
+	}
+
+	.s-feature {
+		justify-content: center;
+
+		.feature {
+			text-align: center;
+			flex-wrap: wrap;
+
+			&__info {
+				margin: 20px 0 0;
+			}
+		}
+	}
+
+	
+	.s-testimonial {
+		
+		&__wrap {
+			margin: 30px 0 0; 
+		}
+
+		.testimonial {
+
+			&__content {
+				padding: 20px 30px;
+			}
+
+			&__client {
+				justify-content: center;
+			}
+		}
+	}
+
+}
+
+
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+	
+}
